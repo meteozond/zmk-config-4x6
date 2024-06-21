@@ -23,7 +23,7 @@
 // trackball bus
 &spi0 {
     status = "okay"; //okay
-    sck-pin = <&gpio0 13>;
+    sck-pin = <13>;
     mosi-pin = <&gpio0 11>;
     miso-pin = <&gpio0 20>;
     cs-gpios = <&gpio1 2 GPIO_ACTIVE_LOW>;
