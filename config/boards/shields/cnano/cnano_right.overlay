@@ -23,10 +23,10 @@
 // trackball bus
 &spi0 {
     status = "okay"; //okay
-    sck-pin = <8>;
-    mosi-pin = <17>;
-    miso-pin = <17>; // same as mosi (3-wire spi)
-    cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
+    sck-pin = <&gpio0 13>;
+    mosi-pin = <&gpio0 11>;
+    miso-pin = <&gpio0 20>;
+    cs-gpios = <&gpio1 2 GPIO_ACTIVE_LOW>;
 };
 
 &trackball {
